@@ -1,0 +1,71 @@
+<!--
+//@name: Assignment 1
+* @Course Code: SODV1201
+* @class: Software Development Diploma program
+* @author: Corazon Marie Palencia
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Info</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png"  alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="grade.html">Grades</a></li>
+                    <li><a href="staff.html" class="active">Staff</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Staff Information</h1>
+            <div class="dropdown">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="nameAsc">Name: A-Z</option>
+                    <option value="nameDesc">Name: Z-A</option>
+                    <option value="salaryAsc">Salary: Lowest to Highest</option>
+                    <option value="salaryDesc">Salary: Highest to Lowest</option>
+                </select>
+            </div>
+            <table id="staffTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Location</th>
+                        <th>Office</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody id="staffBody">
+                    <!-- staff data in js -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Corazon Marie Palencia
+        </div>
+    </footer>
+    
+    <script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/*
+* @name: Assignment 1
+* @Course Code: SODV1201
+* @class: Software Development Diploma program
+* @author: Corazon Marie Palencia
+*/
+
+/* page template starts here */
+body, h1, h2, ul, li, table, tr, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #e39a5a;
+}
+
+header {
+    background-color: #8ba68f; 
+    color: #f7f6eb; 
+    position: fixed;
+    height: 50px;
+    width: 100%;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    margin-top: -30px;
+    display: flex;
+    align-items: center; 
+    height: 100%;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f7f6eb; 
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+.active, ul li a:hover {
+    text-decoration: underline;   
+}
+
+
+
+/* page template ends here */
+
+
+/* Main content styles */
+main {
+    padding: 80px 0 20px; 
+}
+
+.photo {
+    width: 250px; 
+    height: 250px; 
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.info td {
+    padding: 10px;
+    border-bottom: 1px solid #ffcba4; 
+}
+
+.info td:first-child {
+    font-weight: bold;
+    width: 200px;
+}
+
+.info .highlight {
+    color: #b94e48; 
+}
+
+.btsPhoto {
+    width: 50px;
+    transition: transform 0.5s ease;
+    margin: 5px;
+}
+
+.btsPhoto:hover {
+    animation: spin 1s infinite linear;
+}
+
+footer {
+    background-color: #8ba68f; 
+    color: #f7f6eb; 
+    padding: 10px 0;
+    text-align: center;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

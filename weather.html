@@ -1,0 +1,58 @@
+<!--
+//@name: Assignment 1
+* @Course Code: SODV1201
+* @class: Software Development Diploma program
+* @author: Corazon Marie Palencia
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Converter</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png"  alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="grade.html">Grades</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="weather.html" class="active">Weather</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Weather Converter</h1>
+            <div id="converter">
+                <div>
+                    <br>
+                    <label for="fahrenheit">Enter Temperature in Fahrenheit:</label>
+                    <br><br>
+                    <input type="number" id="fahrenheit">
+                    <button id="convert">Convert</button>
+                </div>
+                <br><br>
+                <div id="result"></div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Corazon Marie Palencia
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script4.js" defer></script>
+</body>
+</html>

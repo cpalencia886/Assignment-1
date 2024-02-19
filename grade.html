@@ -1,0 +1,85 @@
+<!--
+//@name: Assignment 1
+* @Course Code: SODV1201
+* @class: Software Development Diploma program
+* @author: Corazon Marie Palencia
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo.png"  alt="Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="grade.html" class="active">Grades</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Grade Converter</h1>
+            <div class="form">
+                <label for="input">Enter Mark:</label>
+                <input type="text" id="input" name="mark">
+                <button id="button">Convert</button>
+                <p id="message" class="message"> <!-- Hidden -->
+                    &nbsp; 
+                </p>
+                <p id="result"></p>
+            </div>
+            
+            <h3 class="center">Grade Legend</h3>
+            <table class="gradeLegend">
+                <tr>
+                    <th>Mark Range</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td class="highlight">90 - 100</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td class="highlight">80 - 89</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td class="highlight">70 - 79</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td class="highlight">50 - 69</td>
+                    <td>D</td>
+                </tr>
+                <tr>
+                    <td class="highlight">0 - 49</td>
+                    <td>F</td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Corazon Marie Palencia
+        </div>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>
